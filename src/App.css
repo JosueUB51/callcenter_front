@@ -1,0 +1,223 @@
+body {
+margin:0;
+font-family:"Segoe UI",sans-serif;
+background:#d9d9d9;
+}
+
+/* HEADER */
+
+.topbar{
+background:#082b66;
+height:90px;
+display:flex;
+align-items:center;
+padding:0 30px;
+}
+
+.topbar h1{
+color:white;
+font-weight:500;
+font-size:34px;
+margin-left:120px;
+}
+
+.logo{
+height:60px;
+}
+
+
+/* CONTENIDO */
+
+.main{
+max-width:1000px;
+margin:auto;
+margin-top:60px;
+}
+
+
+/* TARJETAS */
+
+.card{
+background:#eeeeee;
+border-radius:20px;
+padding:35px;
+margin-bottom:40px;
+}
+
+.card textarea{
+width:100%;
+height:120px;
+border:none;
+outline:none;
+resize:none;
+background:transparent;
+font-size:18px;
+}
+
+
+/* SOLUCION */
+
+.solucion textarea{
+height:100px;
+}
+
+
+/* BOTON SIMULAR */
+
+.btn-call{
+background:#0f7bff;
+color:white;
+border:none;
+padding:14px 24px;
+border-radius:10px;
+cursor:pointer;
+margin-bottom:30px;
+font-size:16px;
+}
+
+
+/* LLAMADA ENTRANTE */
+
+.incoming-call{
+position:fixed;
+top:40%;
+left:50%;
+transform:translate(-50%,-50%);
+background:white;
+padding:40px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 40px rgba(0,0,0,0.3);
+}
+
+
+/* BOTONES LLAMADA */
+
+.call-buttons{
+margin-top:20px;
+display:flex;
+justify-content:center;
+gap:15px;
+}
+
+.btn-accept{
+background:#4caf50;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:10px;
+cursor:pointer;
+}
+
+.btn-reject{
+background:#e53935;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:10px;
+cursor:pointer;
+}
+
+
+/* BARRA DE LLAMADA */
+
+.call-bar{
+background:#0f1e40;
+color:white;
+padding:12px 25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 4px 12px rgba(0,0,0,0.3);
+}
+
+
+/* INFO LLAMADA */
+
+.call-info{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.call-indicator{
+width:10px;
+height:10px;
+background:#4caf50;
+border-radius:50%;
+animation:pulse 1.5s infinite;
+}
+
+.call-text{
+font-weight:500;
+}
+
+.call-time{
+background:#1b2d5a;
+padding:4px 10px;
+border-radius:6px;
+}
+
+
+/* CONTROLES */
+
+.call-controls{
+display:flex;
+gap:10px;
+}
+
+
+/* BOTON MICROFONO */
+
+.btn-mic{
+border:none;
+padding:8px 14px;
+border-radius:8px;
+cursor:pointer;
+font-size:14px;
+}
+
+.mic-on{
+background:#4caf50;
+color:white;
+}
+
+.mic-off{
+background:#ff9800;
+color:white;
+}
+
+
+/* BOTON COLGAR */
+
+.btn-hangup{
+background:#e53935;
+color:white;
+border:none;
+padding:8px 20px;
+border-radius:8px;
+cursor:pointer;
+font-size:14px;
+}
+
+
+/* ANIMACION LLAMADA */
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+opacity:1;
+}
+
+50%{
+transform:scale(1.5);
+opacity:0.5;
+}
+
+100%{
+transform:scale(1);
+opacity:1;
+}
+
+}
